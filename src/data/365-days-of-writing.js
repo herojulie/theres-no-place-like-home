@@ -1,4 +1,4 @@
-var writingSubjects = {
+const writingSubjects = {
   "Mar14": {
     "subject": "180 degrees",
     "description": "Tell us about a time you did a 180 changed your views on something, reversed a decision, or acted in a way you ordinarily don’t."
@@ -191,6 +191,6 @@ var writingSubjects = {
     "subject": "Art appreciation",
     "description": "Do you need to agree with an artist’s lifestyle or politics to appreciate their art? To spend money on it?"
   }
-}
+};
 
 export default writingSubjects

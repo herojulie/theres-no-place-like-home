@@ -6,11 +6,16 @@ const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep
 
 const journalSubject = () => {
   console.log('journalSubject')
-  let today = new Date()
-  let convertedToday = monthNames[today.getMonth()] + '' + today.getDate().toString()
+  debugger
+  let today = new Date();
+  let convertedToday = monthNames[today.getMonth()] + '' + today.getDate().toString();
+
+  if (writingSubject[convertedToday] === undefined) {
+    convertedToday = "Mar15";
+  }
+
   let subject = writingSubject[convertedToday]['subject']
   let description = writingSubject[convertedToday]['description']
-  
 
   return (
     <div className="defaultComponent">
